@@ -39,22 +39,22 @@ The class names follow the naming pattern from the visibility helpers, as per th
 
 ### Examples
 
+Not printing the navbar
 ```html
-    <!-- not printing the navbar -->
     <nav id="navbar" class="bd-navbar navbar is-hidden-print">
     <!-- navbar content... -->
     </nav>
 ```
 
+Adding a special information, only for printouts
 ```html
-    <!-- adding a special information, only for printouts -->
     <section class="hero is-print-only">
         <!-- About this printed document... -->
     </section>
 ```
 
+Adding a page break before a header
 ```html
-    <!-- adding a page break before a header -->
     <h3 class="has-page-break-before">Try it out!</h3>
 ```
 
