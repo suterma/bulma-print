@@ -1,0 +1,33 @@
+{
+  "name": "bulma-print",
+  "version": "1.0.0",
+  "description": "Extends the Bulma CSS framework with additional classes suitable for printing",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suterma/bulma-print.git"
+  },
+  "keywords": [
+    "bulma",
+    "css",
+    "media",
+    "print"
+  ],
+  "author": "Marcel Suter (https://marcelsuter.ch)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suterma/bulma-print/issues"
+  },
+  "homepage": "https://github.com/suterma/bulma-print#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.51.0"
+  },
+  "scripts": {
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-build": "sass --no-source-map _sass/print.scss:css/print.css",
+    "css-postcss": "postcss --use autoprefixer --output css/print.css css/print.css",
+    "css-watch": "npm run css-build -- --watch"
+  }
+}
