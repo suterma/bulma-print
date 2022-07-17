@@ -1,2 +1,2 @@
 # bulma-print
-Extends the Bulma CSS framework with classes suitable for printing
+Extends the [Bulma CSS framework](https://bulma.io/) with additional classes suitable for printing.
