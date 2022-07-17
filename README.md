@@ -13,20 +13,21 @@ _or_
 yarn add bulma-print --dev
 ```
 
-Include the `bulma-print.scss` file from bulma-print into your Sass chain, just after Bulma:
+Include the `bulma-print.scss` file into your Sass chain, just after Bulma:
 
 ```scss
 @import "../node_modules/bulma/bulma";
-@import "../node_modules/bulma-print/bulma-print";
+@import "../node_modules/bulma-print/bulma-print"; //add bulma-print.scss
 ```
 
-Your Sass compiler will then compile bulma-print alongside your project's other Scss files into your CSS file, from where you can use it.
+Your [Sass](https://sass-lang.com/) compiler will then process `bulma-print.scss` alongside your project's other Sass files into the CSS file, from where you can use it.
 
 ## How to use
 
-To define the printout of your pages, you can add the following classes to your HTML:
+To arrange the print layout of your pages, you can add the following classes to your HTML:
 
-| add on class | Description |
+| Add on class | Description |
+| ------------- | ------------- |
 | `is-hidden-print` | Hides the element on the printed page |
 | `is-print-only` | Hides the element on non-print media |
 | `is-not-linked-print` | Suppresses the (added by default) printout of the hyperlink URL |
@@ -53,7 +54,7 @@ Bulma-print will by default add the hyperlink URL (`href`) after any `a` (anchor
 
 ### Page breaks
 
-Print media has the additional concept of pages. The page breaks can be controlled and specifically set, for example you can add `has-page-break-before` to break before `h1` elements, produce a more expected layout on print media. Also, for enumerations like lists or with tables, you might want to keep these on the same page, and can thus use `is-together-print` on the outermost element, like `ul` or `table`.
+Print media has the additional concept of pages. The page breaks can be controlled and specifically set, for example you can add `has-page-break-before` on `h1` elements, to add a page break beforehand, to produce a more expected layout on print media. Also, for enumerations like lists or with tables, you might want to keep these on the same page, and can thus use `is-together-print` on the outermost element, like `ul` or `table`.
 
 ### Responsive size
 
