@@ -37,6 +37,44 @@ To arrange the print layout of your pages, you can add the following classes to 
 
 The class names follow the naming pattern from the visibility helpers, as per the [Bulma documentation](https://bulma.io/documentation/helpers/visibility-helpers/).
 
+### Examples
+
+```html
+    <!-- not printing the navbar -->
+    <nav id="navbar" class="bd-navbar navbar is-hidden-print">
+    <!-- navbar content... -->
+    </nav>
+```
+
+```html
+    <!-- adding a special information, only for printouts -->
+    <section class="hero is-print-only">
+        <!-- About this printed document... -->
+    </section>
+```
+
+```html
+    <!-- adding a page break before a header -->
+    <h3 class="has-page-break-before">Try it out!</h3>
+```
+
+### Further considerations
+
+#### Printed links
+
+Bulma-print will by default add the hyperlink URL (`href`) after any `a` (anchor) element. Otherwise, hyperlinks are not usable from  print media. If you do not like this for a link, you can suppress this via the specific marker class `is-not-linked-print`.
+
+#### Page breaks
+
+Print media has the additional concept of pages. The page breaks can be controlled and specifically set, for example you can add `has-page-break-before` on `h1` elements, to add a page break beforehand, to produce a more expected layout on print media. Also, for enumerations like lists or with tables, you might want to keep these on the same page, and can thus use `is-together-print` on the outermost element, like `ul` or `table`.
+
+#### Responsive size
+
+For printing, Bulma by default uses the layout styles as for their "tablet" screen size. See the [Bulma breakpoint documentation](https://bulma.io/documentation/overview/responsiveness/#breakpoints). This package does not change this.
+
+#### Automatic color adjustments
+
+Any browser may try to optimize the printed colors as it sees fit, and most browsers do. See the documentation about the [`print-color-adjust` CSS property](https://developer.mozilla.org/docs/Web/CSS/print-color-adjust) for more information. Bulma-print does not change this value. You may want to add your custom styles to produce the exact output you like.
 
 ## What's included
 
@@ -45,24 +83,6 @@ This package contains:
   - a main Scss file, `bulma-print.scss` which includes the styles for the above classes.
   - Additional, experimental styles in the `experimental` folder. Use with caution.
   - a pre-compiled .css file, if you do not want to build from .scss
-
-## Further considerations
-
-### Printed links
-
-Bulma-print will by default add the hyperlink URL (`href`) after any `a` (anchor) element. Otherwise, hyperlinks are not usable from  print media. If you do not like this for a link, you can suppress this via the specific marker class `is-not-linked-print`.
-
-### Page breaks
-
-Print media has the additional concept of pages. The page breaks can be controlled and specifically set, for example you can add `has-page-break-before` on `h1` elements, to add a page break beforehand, to produce a more expected layout on print media. Also, for enumerations like lists or with tables, you might want to keep these on the same page, and can thus use `is-together-print` on the outermost element, like `ul` or `table`.
-
-### Responsive size
-
-For printing, Bulma by default uses the layout styles as for their "tablet" screen size. See the [Bulma breakpoint documentation](https://bulma.io/documentation/overview/responsiveness/#breakpoints). This package does not change this.
-
-### Automatic color adjustments
-
-Any browser may try to optimize the printed colors as it sees fit, and most browsers do. See the documentation about the [`print-color-adjust` CSS property](https://developer.mozilla.org/docs/Web/CSS/print-color-adjust) for more information. Bulma-print does not change this value. You may want to add your custom styles to produce the exact output you like.
 
 ## Build
 
