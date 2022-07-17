@@ -1,4 +1,9 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# Files
+
+npm-debug.log
+
+# Folders
+
+.sass-cache
+_gh_pages
+node_modules
