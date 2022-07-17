@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+// bulma-print extends the Bulma CSS framework with additional classes suitable for printing
+// See bulma-print.scss
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@include print {
+  /* Hide non-printable elements*/
+  .is-hidden-print {
+    display: none !important;
+  }
+
+  /* print out link URLs */
+  a:not(.is-not-linked-print)[href]::after {
+    content: "(" attr(href) ")";
+    padding-left: 0.25rem;
+  }
+
+  /* Page breaks and break avoidance */
+  .has-page-break-after {
+    break-after: page;
+  }
+  .has-page-break-before {
+    break-before: page;
+  }
+  .is-together-print {
+    page-break-inside: avoid;
+  }  
+}
+/* Optional print-only elements*/
+@media not print {
+  .is-print-only {
+    display: none !important;
+  }
+}

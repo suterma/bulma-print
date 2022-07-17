@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+// bulma-print extends the Bulma CSS framework with additional classes suitable for printing
+// See bulma-print.scss
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@include print {
+  /* Better use of paper space, padding is done via page margins */
+  .section {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @page {
+    margin-top: 2cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-bottom: 2cm;
+  }
+}

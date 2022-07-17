@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+// bulma-print extends the Bulma CSS framework with additional classes suitable for printing
+
+/**
+ * Optional styling classes for printing pages with the Bulma CSS framework.
+ * See https://github.com/suterma/bulma-print for documentation
+ * 
+ * Note: These classes follow the naming pattern from the visibility helpers, 
+ * as documented at https://bulma.io/documentation/helpers/visibility-helpers/
+ *
+ * Note: Ideas are taken from
+ * https://www.matuzo.at/blog/i-totally-forgot-about-print-style-sheets/
+ * and from
+ * https://gitlab.com/find-it-program-locator/newtowne/-/blob/8.x-1.x/src/global/_print.sass
+ * As stated there, such code may get into Bulma proper with
+ * https://github.com/jgthms/bulma/pull/2329 and https://github.com/jgthms/bulma/issues/721
+ */
+
+
+ @import "sass/helpers"
+

@@ -26,8 +26,8 @@
   },
   "scripts": {
     "css-deploy": "npm run css-build && npm run css-postcss",
-    "css-build": "sass --no-source-map _sass/print.scss:css/print.css",
-    "css-postcss": "postcss --use autoprefixer --output css/print.css css/print.css",
+    "css-build": "sass --no-source-map bulma-print.scss:css/bulma-print.css",
+    "css-postcss": "postcss --use autoprefixer --output css/bulma-print.css css/bulma-print.css",
     "css-watch": "npm run css-build -- --watch"
   }
 }

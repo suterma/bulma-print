@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+// bulma-print extends the Bulma CSS framework with additional classes suitable for printing
+// See bulma-print.scss
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@include print {
+  /* Tags and buttons should have always an outline to distinguish them from simple text */
+  .tag,
+  .button {
+    border: 1px solid black !important;
+  }
+
+  /* Optional non-printable elements*/
+  .is-hidden-print {
+    display: none !important;
+  }
+
+  /* print out link URLs */
+  a:not(.is-not-linked-print)[href]::after,
+  a[href].clearfix::after {
+    content: "(" attr(href) ")";
+    text-decoration: underline;
+    font-size: 90%;
+    padding-left: 0.25rem;
+    /* make sure the content fits like standard text after the link text*/
+    width: fit-content;
+    top: unset;
+  }
+  /* Make sure all is black/white, even opacity is removed */
+  * {
+    background-color: white !important;
+    background-image: none !important;
+    color: black !important;
+    opacity: 100%;
+    /* remove shadows */
+    text-shadow: none;
+  }
+
+  /* hr elements should print black (they do not by default),
+  * in contrast to the other elements defined.
+  * Note: just setting the background to black does only work in the
+  * print media emulation (in Google Chrome), not in the actual printout
+  */
+  hr {
+    border-top: solid 1px #000 !important;
+  }
+
+  /* Optional page breaks and break avoidance */
+  .has-page-break-after {
+    break-after: page;
+  }
+  .has-page-break-before {
+    break-before: page;
+  }
+  .is-together-print {
+    page-break-inside: avoid;
+  }
+  /* Better use of paper space, padding is done via page margins */
+  .section {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @page {
+    margin-top: 2cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-bottom: 2cm;
+  }
+}
+/* Optional print-only elements*/
+@media not print {
+  .is-print-only {
+    display: none !important;
+  }
+}
