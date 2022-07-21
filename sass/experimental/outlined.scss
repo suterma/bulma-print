@@ -2,6 +2,7 @@
 
 // bulma-print extends the Bulma CSS framework with additional classes suitable for printing
 // See bulma-print.scss
+// @devdoc: These styles are experimental, use with caution
 
 @mixin print {
   @media print {
