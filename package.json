@@ -2,7 +2,9 @@
   "name": "bulma-print",
   "version": "1.0.0",
   "description": "Extends the Bulma CSS framework with additional classes suitable for printing",
-  "main": "index.js",
+  "main": "bulma-print.scss",
+  "sass": "bulma-print.scss",
+  "style": "css/bulma-print.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/suterma/bulma-print.git"
