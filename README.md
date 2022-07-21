@@ -1,5 +1,12 @@
 # bulma-print
 
+![License](https://img.shields.io/github/license/suterma/bulma-print.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/suterma/bulma-print/total.svg)
+![Release](https://img.shields.io/github/release/suterma/bulma-print.svg)
+![Language](https://img.shields.io/github/languages/top/suterma/bulma-print.svg)
+[![](https://data.jsdelivr.com/v1/package/npm/bulma-print/badge)](https://www.jsdelivr.com/package/npm/bulma-print)
+
+
 Extends the [Bulma CSS framework](https://bulma.io/) with additional classes and styles suitable for printing.
 
 As with Bulma, you can either use the pre-compiled `.css` file or install the `.sass` files from the NPM package.
