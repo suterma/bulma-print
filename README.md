@@ -2,7 +2,19 @@
 
 Extends the [Bulma CSS framework](https://bulma.io/) with additional classes and styles suitable for printing.
 
-## Install
+As with Bulma, you can either use the pre-compiled `.css` file or install the `.sass` files from the NPM package.
+
+## Using a CDN (without installation)
+
+Import the CSS file directly from [jsDelivr](https://www.jsdelivr.com/package/npm/bulma-print). just after Bulma:
+
+```html
+<!--index.html-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"><!--the Bulma CSS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-print@1.0.0/css/bulma-print.css"><!--add bulma-print.css-->
+```
+
+## Installing from NPM 
 
 ```sh
 npm install bulma-print --save-dev
@@ -13,10 +25,21 @@ _or_
 yarn add bulma-print --dev
 ```
 
-Include the `bulma-print.scss` file into your Sass chain, just after Bulma:
+Now you can either either use the pre-compiled `bulma-print.css` file:
+
+```html
+<!--index.html-->
+<link rel="stylesheet" href="css/main.css"><!--the Bulma CSS-->
+<link rel="stylesheet" href="./node_modules/bulma-print/css/bulma-print.css"><!--add bulma-print.css-->
+```
+
+_or_
+
+include the `bulma-print.scss` file into your Sass chain:
 
 ```scss
-@import "../node_modules/bulma/bulma";
+//main.scss
+@import "../node_modules/bulma/bulma"; //the bulma.scss
 @import "../node_modules/bulma-print/bulma-print"; //add bulma-print.scss
 ```
 
