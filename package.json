@@ -1,6 +1,6 @@
 {
   "name": "bulma-print",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extends the Bulma CSS framework with additional classes suitable for printing",
   "main": "bulma-print.scss",
   "sass": "bulma-print.scss",
