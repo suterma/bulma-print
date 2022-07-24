@@ -6,6 +6,7 @@
 ![Language](https://img.shields.io/github/languages/top/suterma/bulma-print.svg "Language")
 ![npm](https://img.shields.io/npm/dm/bulma-print "NPM")
 [![](https://data.jsdelivr.com/v1/package/npm/bulma-print/badge "jsDelivr")](https://www.jsdelivr.com/package/npm/bulma-print)
+[![Rate this package](https://badges.openbase.com/js/rating/bulma-print.svg?)](https://openbase.com/js/bulma-print?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 
 Extends the [Bulma CSS framework](https://bulma.io/) with additional classes and styles suitable for printing.
 
