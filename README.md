@@ -14,7 +14,7 @@ As with Bulma, you can either use the pre-compiled `.css` file or install the `.
 
 ## Using a CDN (without installation)
 
-Import the CSS file directly from [jsDelivr](https://www.jsdelivr.com/package/npm/bulma-print). just after Bulma:
+Import the CSS file directly from [jsDelivr](https://www.jsdelivr.com/package/npm/bulma-print), just after Bulma:
 
 ```html
 <!--index.html-->
