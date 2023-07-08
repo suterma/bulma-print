@@ -19,7 +19,7 @@ Import the CSS file directly from [jsDelivr](https://www.jsdelivr.com/package/np
 ```html
 <!--index.html-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"><!--the Bulma CSS-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-print@1.0.0/css/bulma-print.css"><!--add bulma-print.css-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-print@1.0.1/css/bulma-print.css"><!--add bulma-print.css-->
 ```
 
 ## Installing from NPM 
